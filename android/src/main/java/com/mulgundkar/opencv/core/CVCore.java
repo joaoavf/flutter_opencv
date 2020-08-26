@@ -231,7 +231,7 @@ public class CVCore {
     }
 
     @SuppressLint("MissingPermission")
-    public byte[] dilate(byte[] byteData, int alpha, int beta) {
+    public byte[] normalize(byte[] byteData, int alpha, int beta) {
         return byteData;
     }
 
