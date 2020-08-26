@@ -18,6 +18,7 @@ import org.opencv.imgproc.Imgproc;
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
+
 import io.flutter.Log;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
@@ -90,6 +91,10 @@ public class OpenCV4Plugin implements FlutterPlugin, MethodCallHandler {
             case "filter2D":
                 result.success(core.filter2D((byte[]) call.argument("byteData"), (int) call.argument("outputDepth"),
                         (ArrayList) call.argument("kernelSize")));
+                break;
+            case "normalize":
+                result.success(
+                        core.normalize((byte[]) call.argument("byteData"), (int) call.argument("alpha"), (int) call.argument("beta")));
                 break;
             case "dilate":
                 result.success(
@@ -188,7 +193,7 @@ public class OpenCV4Plugin implements FlutterPlugin, MethodCallHandler {
                 break;
             case "warpPerspectiveTransform":
                 result.success(core.warpPerspectiveTransform((byte[]) call.argument("byteData"),
-                        (ArrayList) call.argument("sourcePoints"), (ArrayList) call.argument("destinationPoints"), (ArrayList) call.argument("outputSize") ));
+                        (ArrayList) call.argument("sourcePoints"), (ArrayList) call.argument("destinationPoints"), (ArrayList) call.argument("outputSize")));
                 break;
             default:
                 result.notImplemented();

@@ -231,6 +231,11 @@ public class CVCore {
     }
 
     @SuppressLint("MissingPermission")
+    public byte[] dilate(byte[] byteData, int alpha, int beta) {
+        return byteData;
+    }
+
+    @SuppressLint("MissingPermission")
     public byte[] dilate(byte[] byteData, ArrayList kernelSize) {
         byte[] byteArray = new byte[0];
         try {
