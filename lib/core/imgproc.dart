@@ -601,6 +601,16 @@ class ImgProc {
     return result;
   }
 
+  static Future<dynamic> normalize(
+      Uint8List byteData, int alpha, int beta) async {
+    /// Variable to store operation result
+    final dynamic result = await _channel.invokeMethod(
+        'dilate', {'byteData': byteData, 'alpha': alpha, 'beta': beta});
+
+    /// Function returns the response from method channel
+    return result;
+  }
+
   /// Function takes input file's byte array data & size of the kernel box.
   static Future<dynamic> dilate(
       Uint8List byteData, List<int> kernelSize) async {
@@ -930,7 +940,9 @@ class ImgProc {
   ///   sourcePoints = [P1.x, P1.y, P2.x, P2.y, P3.x, P3.y, P4.x, P4.y]
   ///   similarly for destinationPoints as well
   static Future<dynamic> warpPerspectiveTransform(Uint8List byteData,
-      {@required List sourcePoints, @required List destinationPoints, @required List<double> outputSize}) async {
+      {@required List sourcePoints,
+      @required List destinationPoints,
+      @required List<double> outputSize}) async {
     /// Variable to store operation result
     final dynamic result =
         await _channel.invokeMethod('warpPerspectiveTransform', {

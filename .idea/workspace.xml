@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a9873cf-3ab3-41b9-8a0a-6ec5c887c8fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/mulgundkar/opencv/OpenCV4Plugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/mulgundkar/opencv/OpenCV4Plugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/mulgundkar/opencv/core/CVCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/mulgundkar/opencv/core/CVCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/imgproc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/imgproc.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +47,14 @@
       <option name="presentableId" value="Default" />
       <updated>1581343824980</updated>
     </task>
+    <task id="LOCAL-00001" summary="[FEATURE]: Playing around with OpenCV flutter package in order to try to add more functionalities.">
+      <created>1598467233828</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598467233828</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -62,6 +65,20 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[FEATURE]: Playing around with OpenCV flutter package in order to try to add more functionalities." />
+    <option name="LAST_COMMIT_MESSAGE" value="[FEATURE]: Playing around with OpenCV flutter package in order to try to add more functionalities." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1598467233069">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598467233069" />
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1598467235960">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598467235960" />
   </component>
   <component name="masterDetails">
     <states>
