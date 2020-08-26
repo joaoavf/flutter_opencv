@@ -603,12 +603,8 @@ class ImgProc {
 
   static Future<dynamic> normalize(
       Uint8List byteData, int alpha, int beta) async {
-    /// Variable to store operation result
-    final dynamic result = await _channel.invokeMethod(
-        'dilate', {'byteData': byteData, 'alpha': alpha, 'beta': beta});
-
     /// Function returns the response from method channel
-    return result;
+    return byteData;
   }
 
   /// Function takes input file's byte array data & size of the kernel box.
